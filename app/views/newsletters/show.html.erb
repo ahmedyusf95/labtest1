@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+ 
+  <%= link_to @newsletter.title,  url_for(@newsletter.pdf_url), :action => :download %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @newsletter.description %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @newsletter.date %>
+</p>
+<p>
+ 
+
+<%= link_to 'Edit', edit_newsletter_path(@newsletter) %> |
+<%= link_to 'Back', newsletters_path %>

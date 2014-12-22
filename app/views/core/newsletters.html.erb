@@ -1,0 +1,28 @@
+ <p>
+      <% newsletters.description %>
+      
+      <\p>
+
+<article id="newsletters">
+  
+  <% @newsletters.each do |newsletters| %>
+  
+  <section>
+    
+    <h2><%= newsletters.title %></h2>
+      
+      
+    <p>
+      <%= newsletters.description %>
+      
+      <\p>
+        
+         <p>
+           <%= newsletters.date %>  |
+      
+      <\p>
+          </section>
+      <% end %>
+    </article>
+      
+      

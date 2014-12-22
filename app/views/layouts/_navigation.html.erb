@@ -1,0 +1,48 @@
+<nav>
+  <style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+    
+    li {
+    display: inline;
+      
+      }
+
+a:link, a:visited {
+    
+    font-weight: bold;
+    color: #EEEEEE;
+    background-color: #98bf21;
+    width: 120px;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover, a:active {
+    background-color: #7A991A;
+}
+}
+  </style>
+ <ul>
+   
+   <li><%= link_to "Home", root_path %></li>
+   <li><%= link_to "About the club", about_the_club_path %></li>
+   <li><%= link_to "How to join", how_to_join_path %></li>
+   <li><%= link_to "what you need", what_you_need_path %></li>
+   <li><%= link_to "Newsletter", newsletters_path %></li>
+   <li><%= link_to "Club matters", club_matters_path %></li>
+   <li><%= link_to "How to get there", how_to_get_there_path %></li>
+   <li><%= link_to "Book a lawn", book_a_lawn_path %></li>
+   <li><%= link_to "2014 programme", events_path %></li>
+   <li><%= link_to "Links to croquet sites", links_to_croquet_sites_path %></li>
+ 
+   
+   
+  </ul>
+  
+</nav>
