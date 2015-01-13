@@ -11,6 +11,8 @@ class EventsController < ApplicationController
   # GET /events/1
   # GET /events/1.json
   def show
+    @comments = @event.comments.all
+    @comment = @event.comments.build
   end
 
   # GET /events/new
@@ -37,6 +39,8 @@ class EventsController < ApplicationController
       end
     end
   end
+  
+ 
 
   # PATCH/PUT /events/1
   # PATCH/PUT /events/1.json
@@ -72,4 +76,5 @@ class EventsController < ApplicationController
     def event_params
       params.require(:event).permit(:title, :date, :description)
     end
+  
 end

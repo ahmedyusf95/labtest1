@@ -15,5 +15,22 @@
   <%= @event.description %>
 </p>
 
+ 
+
+<h3>Comments</h3>
+<% @comments.each do |comment| %>
+  <div>
+    <strong>Author:</strong>
+    <strong><%=  comment.author %></strong>
+    <strong>comment:</strong>
+    <strong><%= comment.details %></strong>
+    <br />
+ 
+   
+  </div>
+<% end %>
+<%= render 'comments/form' %>
+
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>
+
